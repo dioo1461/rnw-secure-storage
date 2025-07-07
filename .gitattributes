@@ -1,0 +1,9 @@
+* text eol=lf
+
+windows/** text eol=crlf
+*.bat text eol=crlf
+
+*.sh   text eol=lf
+*.json text eol=lf
+*.jar binary
+*.otf -text binary
