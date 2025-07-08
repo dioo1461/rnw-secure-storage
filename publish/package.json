@@ -1,11 +1,7 @@
 {
   "name": "rnw-secure-storage",
-  "version": "0.1.6",
+  "version": "0.1.9",
   "type": "module",
-  "files": [
-    "dist",
-    "windows"
-  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": { 

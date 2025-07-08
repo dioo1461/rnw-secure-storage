@@ -78,3 +78,4 @@ msbuild.binlog
 
 publish/*
 !publish/package.json
+!publish/.npmignore
