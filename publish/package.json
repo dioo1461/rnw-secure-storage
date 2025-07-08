@@ -1,0 +1,26 @@
+{
+  "name": "rnw-secure-storage",
+  "version": "0.1.2",
+  "type": "module",
+  "files": [
+    "dist",
+    "windows"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "react-native": "^0.78.2",
+    "react-native-windows": "^0.78.4"
+  },
+  "peerDependenciesMeta": {
+    "react-native": { "optional": true },
+    "react-native-windows": { "optional": true }
+  },
+  "react-native": {
+    "platforms": {
+      "ios": null,
+      "macos": null,
+      "android": null
+    }
+  }
+}
