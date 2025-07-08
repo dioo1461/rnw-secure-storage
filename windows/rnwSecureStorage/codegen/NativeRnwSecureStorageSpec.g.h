@@ -20,7 +20,6 @@ struct RnwSecureStorageSpec : winrt::Microsoft::ReactNative::TurboModuleSpec {
       Method<void(std::string, Promise<std::optional<std::string>>) noexcept>{0, L"get"},
       Method<void(std::string, std::string, Promise<void>) noexcept>{1, L"set"},
       Method<void(std::string, Promise<void>) noexcept>{2, L"delete"},
-      Method<void(Promise<void>) noexcept>{3, L"getAll"},
   };
 
   template <class TModule>
@@ -42,11 +41,6 @@ struct RnwSecureStorageSpec : winrt::Microsoft::ReactNative::TurboModuleSpec {
           "delete",
           "    REACT_METHOD(delete) void delete(std::string key, ::React::ReactPromise<void> &&result) noexcept { /* implementation */ }\n"
           "    REACT_METHOD(delete) static void delete(std::string key, ::React::ReactPromise<void> &&result) noexcept { /* implementation */ }\n");
-    REACT_SHOW_METHOD_SPEC_ERRORS(
-          3,
-          "getAll",
-          "    REACT_METHOD(getAll) void getAll(::React::ReactPromise<void> &&result) noexcept { /* implementation */ }\n"
-          "    REACT_METHOD(getAll) static void getAll(::React::ReactPromise<void> &&result) noexcept { /* implementation */ }\n");
   }
 };
 

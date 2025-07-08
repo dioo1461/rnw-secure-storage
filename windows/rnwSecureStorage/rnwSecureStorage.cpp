@@ -44,7 +44,7 @@ namespace winrt::rnwSecureStorage
     }
     catch (hresult_error const& e)
     {
-      result.Reject(e.code(), to_string(e.message()));
+      //result.Reject(e.code());
     }
   }
 
@@ -59,28 +59,7 @@ namespace winrt::rnwSecureStorage
     }
     catch (hresult_error const& e)
     {
-      result.Reject(e.code(), to_string(e.message()));
-    }
-  }
-
-  void RnwSecureStorage::getAll(React::ReactPromise<React::JSValueObject> &&result) noexcept
-  {
-    try
-    {
-      PasswordVault vault;
-      React::JSValueObject map;
-
-      for (auto const& cred : vault.FindAllByResource(kResourceName))
-      {
-        auto c = cred;
-        c.RetrievePassword();
-        map[ to_string(c.UserName()) ] = React::JSValue( to_string(c.Password()) );
-      }
-      result.Resolve(std::move(map));
-    }
-    catch (hresult_error const& e)
-    {
-      result.Reject(e.code(), to_string(e.message()));
+      //result.Reject(e.code());
     }
   }
 }  // namespace winrt::rnwSecureStorage

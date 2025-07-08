@@ -33,9 +33,6 @@ namespace winrt::rnwSecureStorage
     void remove(std::string const& key,
                 React::ReactPromise<void> &&result) noexcept;
 
-    REACT_METHOD(getAll)
-    void getAll(React::ReactPromise<React::JSValueObject> &&result) noexcept;
-
   private:
     static constexpr wchar_t kResourceName[] = L"SecureStorage";
     React::ReactContext m_context;

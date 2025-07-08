@@ -1,6 +1,6 @@
 {
   "name": "rnw-secure-storage",
-  "version": "0.0.2",
+  "version": "0.0.8",
   "type": "module",
   "files": [
     "dist",

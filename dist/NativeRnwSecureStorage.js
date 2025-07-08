@@ -1,2 +1,2 @@
 import { TurboModuleRegistry } from 'react-native';
-export default TurboModuleRegistry.getEnforcing('SecureStorage');
+export default TurboModuleRegistry.getEnforcing('RnwSecureStorage');
