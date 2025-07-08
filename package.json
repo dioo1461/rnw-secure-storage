@@ -21,7 +21,7 @@
     "typescript-eslint": "^8.30.1"
   },
   "scripts": {
-    "build": "bash npx tsc --build && cp -r windows publish/windows"
+    "build": "bash npx tsc --build && cp -r windows publish/windows && cp README.md publish/README.md"
   },
   "engines": {
     "node": ">=18"

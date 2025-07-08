@@ -4,9 +4,8 @@ A simple Windows-only React Native TurboModule for secure, OS-managed encryption
 
 ## Features
 
-- Automatic overwrite on duplicate keys  
-- Data is automatically purged when the app is uninstalled  
-- Optional Windows Hello (biometric/PIN) integration  
+- Automatic overwrite on duplicate keys
+- Data is automatically purged when the app is uninstalled
 
 ## API
 
