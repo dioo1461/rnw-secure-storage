@@ -75,6 +75,4 @@ yarn-error.log
 
 # build cache & logs
 msbuild.binlog
-
-# env
-.env
+publish/

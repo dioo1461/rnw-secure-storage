@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "./dist",
+    "outDir": "./publish/dist",
 
     "types": ["react-native"],
     "target": "ES2022",

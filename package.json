@@ -1,10 +1,9 @@
 {
-  "name": "rnw-secure-storage",
-  "version": "0.0.8",
+  "name": "rnw-secure-storage-publisher",
+  "version": "0.1.1",
   "type": "module",
   "files": [
-    "dist",
-    "windows"
+    "publish"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,7 +23,7 @@
     "typescript-eslint": "^8.30.1"
   },
   "scripts": {
-    "build": "tsc --build"
+    "build": "bash npx tsc --build && cp -r windows publish/windows"
   },
   "engines": {
     "node": ">=18"
@@ -38,6 +37,13 @@
       "namespace": "rnwSecureStorageCodegen",
       "outputDirectory": "windows/rnwSecureStorage/codegen",
       "separateDataTypes": true
+    }
+  },
+  "react-native": {
+    "platforms": {
+      "ios": null,
+      "macos": null,
+      "android": null
     }
   },
   "react-native-windows": {
