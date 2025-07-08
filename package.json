@@ -1,21 +1,50 @@
 {
   "name": "rnw-secure-storage",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "type": "module",
+  "files": [
+    "dist",
+    "windows"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "devDependencies": {
-    "react-native": "0.78.2",
+    "@react-native-community/cli": "^18.0.0",
+    "@stylistic/eslint-plugin": "^2.13.0",
     "eslint": "^8.56.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "@stylistic/eslint-plugin": "^2.13.0",
-    "typescript": "5.0.4",
-    "typescript-eslint": "^8.30.1",
-    "globals": "^15.14.0"
+    "globals": "^15.14.0",
+    "react-native": "0.78.2",
+    "react-native-windows": "^0.78.4",
+    "typescript": "^5.0.4",
+    "typescript-eslint": "^8.30.1"
+  },
+  "scripts": {
+    "build": "tsc --build"
   },
   "engines": {
     "node": ">=18"
+  },
+  "codegenConfig": {
+    "name": "RnwSecureStorageSpec",
+    "type": "modules",
+    "jsSrcsDir": "src",
+    "includesGeneratedCode": true,
+    "windows": {
+      "namespace": "rnwSecureStorageCodegen",
+      "outputDirectory": "windows/rnwSecureStorage/codegen",
+      "separateDataTypes": true
+    }
+  },
+  "react-native-windows": {
+    "init-windows": {
+      "name": "rnwSecureStorage",
+      "namespace": "rnwSecureStorage",
+      "template": "cpp-lib"
+    }
   }
 }
